@@ -361,13 +361,14 @@ a .fa-facebook-f:hover, .fa-square-instagram:hover{
         }
         .home-body p{
             font-size: 15px;
+            margin-left: 70px;
         }
         .span{
             font-weight: bolder;
             font-size: 20px
         }
         .span1{
-            margin-left: 95px;
+            margin-left: 100px;
         }
         .view-more img{
             margin-left: 120px;
