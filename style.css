@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(images/me.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    height: 75px;
+    background: #7529d3;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav img{
+    width: 200px;
+    position: absolute;
+    top: -30px;
+    left: 5%;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #f6e923;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.view-more img {
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 150px;
+    margin-left: 800px;
+    overflow: hidden;
+    border: #f6e923 solid;
+}
+.view-more p{
+    margin-top: 10px;
+    margin-left: 700px;
+    font-size: 20px;
+    color: rgb(238, 235, 235);
+    font-family: 'Cabin', sans-serif;
+}
+.span{
+    font-weight: bolder;
+    font-size: 30px
+}
+.span1{
+    margin-left: 135px;
+}
+.span1:hover{
+    color: #f6e923;
+    font-size: larger;
+    margin-left: 130px;
+    text-decoration: underline;
+    transition: all .5s;
+}
+label #btn, label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 60px
+}
+.gallery img{
+    width: 300px;
+    border: #f6e923 solid;
+    margin-top: 20px;
+    opacity: .8;
+}
+.gallery img:hover{
+    border: #f6e923 solid;
+    border-radius: 50px;
+    width: 350px;
+    transition: all 1s;
+    opacity: 1;
+}
+.music-container{
+    display: flex;
+    flex-flow: column;
+    padding-top: 80px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.music-container .song{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.song{
+    border-bottom: #f6e923 solid;
+    margin-top: 10px;
+}
+.music-container img{
+    width: 100px;
+    border: #f6e923 solid;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.music-container h1{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.music-container audio{
+    width: 300px;
+    height: 30px;
+}
+.music-container .song:hover{
+    border: #f6e923 solid;
+    transition: all .5s;
+}
+.con-container{
+    padding-top: 150px;
+}
+.con-container form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 450px;
+}
+input{
+    padding: 10px 100px;
+    text-align: center;
+}
+textarea{
+    padding: 100px;
+    text-align: center;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+textarea:hover{
+    border: #f6e923 solid;
+}
+input:hover{
+    border: #f6e923 solid;
+}
+button:hover{
+    opacity: .5;
+    border: #f6e923 solid;
+    transition: all .5s;
+}
+.me-container{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    border-bottom: #f6e923 solid;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.me-container h1{
+    color: aliceblue;
+    margin-bottom: 20px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.me-container p{
+    color: aliceblue;
+    line-height: 20px;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a .fa-facebook-f, .fa-square-instagram{
+    font-size: 40px;
+    color: white;
+    margin: 30px;
+}
+a .fa-facebook-f:hover, .fa-square-instagram:hover{
+    font-size: 50px;
+    transition: all .5s;
+    color: #f6e923;
+}
+@media (max-width: 1000px){
+    nav img{
+        left: 8%;
+    }
+    .view-more img {
+        margin-left: 610px;
+    }
+    .view-more p{
+        margin-left: 500px;
+    }
+    .span1{
+        margin-left: 135px;
+    }
+    .con-container form{
+        margin-right: 420px;
+    }
+}
+@media (max-width: 944px) {
+    nav img{
+        left: 6%;
+        top: -15px;
+        width: 150px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .view-more img {
+        margin-left: 400px;
+    }
+    .view-more p{
+        margin-left: 600px;
+    }
+    .span1{
+        margin-left: 85px;
+    }
+    .span1:hover{
+        margin-left: 100px;
+    }
+    .view-more p{
+        margin-left: 280px;
+    }
+    .span1{
+        margin-left: 150px;
+    }
+    .span1:hover{
+        margin-left: 150px;
+    }
+    .con-container form{
+        margin-right: 160px;
+    }
+}
+@media (max-width: 868px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #882fd5;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .view-more img {
+        margin-left: 160px;
+    }
+    .view-more p{
+        margin-left: 60px;
+    }
+    .span1{
+        margin-left: 130px;
+    }
+    .span1:hover{
+        margin-left: 120px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: .5s;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    .con-container form{
+        margin-right: 10px;
+    }
+}

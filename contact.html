@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/404ab977b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <div class="nav-bar">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-solid fa-bars" id="btn"></i>
+                    <i class="fa-solid fa-xmark" id="cancel"></i>
+                </label>
+                <img src="images/ches-logo.PNG" alt="">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="art.html">ART GALLERY</a></li>
+                    <li><a href="playlist.html">MY PLAYLIST</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                    <li><a href="me.html">ABOUT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="con-container">
+            <form action="https://formsubmit.co/efaches@gmail.com" method="POST">
+                <input type="name" name="name" placeholder="Input your name" required>
+                <input type="email" name="email" placeholder="Input your E-mail" required>
+                <textarea name="message" placeholder="Message here!!" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
